@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -133,8 +135,7 @@
 }
 
 .details {
-    padding: 1rem var(--padding-horizontal);
-    padding-bottom: 2rem;
+    padding: 2rem var(--padding-horizontal);
 }
 
 .details-text {
@@ -180,9 +181,37 @@
     z-index: 1;
 }
 
-.call-to-action-section {
-    height: 100vh;
+.testimonial {
+    background-color: #E7E5EB;
+    padding: 2rem var(--padding-horizontal)
 }
+
+.quote {
+    color: black;
+    font-size: 32px;
+    padding: 3rem 7rem;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.quote::before {
+    content: '"';
+    color: goldenrod;
+}
+
+.quote::after {
+    content: '"';
+    color: goldenrod;
+}
+
+.quote cite {
+    font-size: 24px;
+    color: black;
+    position: relative;
+    top: 4px;
+}
+
 
 .footer {
     padding: 2rem;
