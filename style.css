@@ -8,14 +8,15 @@
 }
 
 :root {
-    --padding-horizontal: 20rem;
+    --padding-horizontal: 10rem;
     --accent-color: #3882f6;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1000px) {
     :root {
-        --padding-horizontal: 10rem;
+        --padding-horizontal: 8rem;
     }
+
 }
 
 .header {
@@ -77,7 +78,6 @@
 }
 
 .hero-section {
-    /* background-image: url(https://pixabay.com/get/gf1eb53d220eafab459b1affe02e79bc68b890c882e75a055df6850f5479e9da31dc924f2979966c5848bcf3790b63c79ace7b169fbacaa791a9cc6009b29132f0808e916f0722e6d2f8e4edfc8853014_1920.jpg); */
     object-fit: cover;
     background-color: black;
     background-image: -webkit-cross-fade(
@@ -115,7 +115,7 @@
 }
 
 .hero-text, .hero-subtext {
-    width: 60%;
+    width: 80%;
 }
 
 .hero-button {
@@ -144,12 +144,14 @@
     font-size: 36px;
     font-weight: 900;
     margin-bottom: 2rem;
+    
 }
 
 .details-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    overflow-x: auto;
 }
 
 .picture {
@@ -173,6 +175,7 @@
     margin-top: 1rem;
     transition: 300ms ease-out;
     position: relative;
+    left: 5px;
     z-index: 1;
 }
 
@@ -223,4 +226,16 @@
 
 a {
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero-text, .hero-subtext {
+        width: 100%;
+    }
+    .hero-text {
+        font-size: 32px;
+    }
+    .hero-subtext {
+        font-size: 18px;
+    }
 }
