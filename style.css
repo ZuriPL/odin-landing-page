@@ -129,11 +129,11 @@
     border: none;
 }
 
-.hero-button:hover {
+.hero-button:hover, .call-to-action-button:hover {
     background-color: rgb(50, 120, 231);
 }
 
-.hero-button:active {
+.hero-button:active, .call-to-action-button:active {
     background-color: #2163cc;
 }
 
@@ -231,6 +231,24 @@
     color: black;
 }
 
+.call-to-action-section {
+    padding: 4rem var(--padding-horizontal);
+}
+
+.call-to-action {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    padding: 4rem 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.call-to-action-button {
+    padding: 1rem 2rem;
+    background-color: var(--accent-color);
+    border: white 2px solid;
+    border-radius: 15px;
+}
 
 .footer {
     padding: 2rem;
