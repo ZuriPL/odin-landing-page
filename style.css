@@ -12,7 +12,7 @@
     --accent-color: #3882f6;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1070px) {
     :root {
         --padding-horizontal: 8rem;
     }
@@ -89,6 +89,7 @@
     padding-bottom: 4rem;
     margin-top: -5rem;
     display: flex;
+    min-height: 300px;
 }
 
 .hero-text {
@@ -228,7 +229,7 @@ a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1070px) {
     .hero-text, .hero-subtext {
         width: 100%;
     }
@@ -237,5 +238,8 @@ a {
     }
     .hero-subtext {
         font-size: 18px;
+    }
+    .hero-section {
+        min-height: none;
     }
 }
