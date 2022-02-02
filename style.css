@@ -219,14 +219,10 @@
     z-index: 3;
 }
 
-.quote::before {
+.quote::before, .quote::after {
     content: '"';
     color: goldenrod;
-}
-
-.quote::after {
-    content: '"';
-    color: goldenrod;
+    font-style: italic;
 }
 
 .quote cite {
@@ -241,6 +237,9 @@
     background-color: #222222;
     font-size: 16px;
     color: white;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
 } 
 
 a {
