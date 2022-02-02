@@ -7,6 +7,7 @@
 
 :root {
     --padding-horizontal: 20rem;
+    --accent-color: #3882f6;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -30,6 +31,14 @@
 
 .header-link {
     text-decoration: none;
+}
+
+.header-link a {
+    transition: 250ms ease-in-out;
+}
+
+.header-link:hover a {
+    color: var(--accent-color);
 }
 
 .header-link-list {
