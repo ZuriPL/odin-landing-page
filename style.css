@@ -21,6 +21,7 @@
 
 .header {
     background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,7 +52,7 @@
 }
 
 .header-logo {
-    animation: flow 10s ease-in-out infinite;
+    animation: flow 15s ease-in-out infinite;
     background: linear-gradient(-90deg, #3882f6, #3882f6, #10c772, #e7d63c);
     background-size: 300%;
     -webkit-background-clip: text;
@@ -151,7 +152,7 @@
 .details-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     overflow-x: auto;
 }
 
@@ -165,16 +166,35 @@
     background-position-x: center;
     z-index: 20;
     position: relative;
+}
 
+.picture.one {
+    background-image: url(https://cdn.pixabay.com/photo/2016/08/25/21/24/houston-1620695_960_720.jpg);
+    background-position-x: left;
+}
+
+.picture.two {
+    background-image: url(https://cdn.pixabay.com/photo/2016/07/30/08/13/moscow-1556561_960_720.jpg);
+}
+
+.picture.three {
+    background-image: url(https://cdn.pixabay.com/photo/2017/09/06/18/22/island-2722471_960_720.jpg);
+    background-position-x: left;
+}
+
+.picture.four {
+    background-image: url(https://cdn.pixabay.com/photo/2014/05/26/09/58/sydney-opera-house-354375_960_720.jpg);
+    background-position-x: right;
 }
 
 .picture-details {
-    transform: translateY(-130%);
-    color: #222222;
+    transform: translateY(-200%);
+    color: #000000;
     text-align: center;
+    font-weight: 500;
     width: 140px;
     margin-top: 1rem;
-    transition: 300ms ease-out;
+    transition: 250ms ease-out;
     position: relative;
     left: 5px;
     z-index: 1;
